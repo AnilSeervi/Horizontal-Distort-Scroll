@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.cdnfonts.com/css/monument-extended"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Horizontal Distort Scroll</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="block block-1">
+        <h1>asterisks.</h1>
+      </div>
+      <div class="block block-2">
+        <h1>unlocked.</h1>
+      </div>
+      <div class="block block-3">
+        <h1>offbeat.</h1>
+      </div>
+      <div class="block block-4">
+        <h1>brutal.</h1>
+      </div>
+      <div class="block block-5">
+        <h1>mouthwash.</h1>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+    <script>
+      const blocks = document.getElementsByClassName("block");
+      const container = document.getElementsByClassName("container");
+      const hs = new HorizontalScroll.default({
+        blocks: blocks,
+        container: container,
+        isAnimated: true,
+        springEffect: 0.8,
+      });
+    </script>
+  </body>
+</html>
